@@ -1,1 +1,23 @@
 将别人的项目拷贝到本地
+   git clone https://github.com/Yin-Hongwei/music-website.git
+
+需打开到对象项目目录文件下，右键使用gitdash：
+将本地项目初始化，创建一个.git的本地仓库
+git init
+推送本项目到暂存区（.表示本项目）
+git add .
+
+将暂存区内容提交到本地仓库（并做描述）
+git commit -m "功能一已完成"
+
+查看上传到本地仓库记录
+git log
+
+将本地仓库与远程仓库连接：
+git remote add origin https://github.com/Xiaoyeemale/my-product.git
+推送本地仓库
+git push origin master -u
+
+
+从本地仓库中恢复最近上传的文件
+git checkout HEAD main.py
